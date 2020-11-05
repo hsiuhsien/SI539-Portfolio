@@ -18,6 +18,7 @@ h2{
 
 header{
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    opacity: 100%;
 }
 
 nav ul{
@@ -30,7 +31,8 @@ nav ul li{
   background-color:#DEB887;
   font-size:calc(12px + 1vw);
   text-align:center;
-	padding:10px;
+  vertical-align: middle;
+	padding:10px 0;
 	border:1px;
 }
 
@@ -38,7 +40,8 @@ nav ul li{
   background-color:#2f4f4f;
   font-size:calc(14px + 1vw);
   text-align:center;
-	padding:10px;
+  vertical-align: middle;
+  padding:10px 0;
 	border:1px;
 }
 
@@ -48,7 +51,7 @@ nav ul li{
 }
 
 nav ul li a{
-    text-decoration: none;
+    text-decoration: underline;
     color: #264040;
 }
 
@@ -56,25 +59,14 @@ body{
 	margin:1%;
     padding:1%;
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-}
-
-body::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    opacity: 0.5;
-    z-index: -1;
     background-image: url("../images/Taiwan_background.jpg");
     background-repeat: no-repeat;
-    background-size: cover ;
+    background-size: cover;
     background-position: center;
     background-color: gray;
     background-attachment: fixed;
+    z-index: -1;
 }
-
 
 main p {
     display: block;
@@ -83,17 +75,20 @@ main p {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-size: 18px;
-    color: #173030;
+    color: #0f2020;
 }
 
 header, main, nav{
-	margin-bottom: 10px;
+  margin-bottom: 10px;
+  z-index: 1;
 }
 
 .map{
     text-align: center;
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .map iframe{
