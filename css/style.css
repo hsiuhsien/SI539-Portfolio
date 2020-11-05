@@ -1,5 +1,4 @@
 h1{
-	display: block; 
     font-size: 36px; 
     text-align:center;
 	margin-top: 0.67em; 
@@ -10,10 +9,16 @@ h1{
     color: #803912;
 }
 
-header{
-    font-family: "Lucida Console", Courier, monospace;
-}
+h2{
+    font-size: 24px;
+    line-height: 1;
+    color: #2f4f4f;
+    margin-top: 10px;
+  }
 
+header{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
 
 nav ul{
    display: grid;
@@ -34,7 +39,7 @@ nav ul li{
     font-size: 25px;
     text-align:center;
 	padding:10px;
-	border:1p;
+	border:1px;
 }
 
 .current a{
@@ -47,27 +52,10 @@ nav ul li a{
     color: #264040;
 }
 
-a.skip{
-    background: white;
-    left: 0;
-    padding: 6px;
-    position: absolute;
-    top: -40px;
-    -webkit-transition: top 1s ease-out;
-    transition: top 1s ease-out;
-    z-index: 1;
-  }
-  
-a.skip:focus{
-top:20px;
-color: black;
-text-decoration-style: solid;
-}
-
 body{
 	margin:1%;
     padding:1%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
 body::before{
@@ -104,10 +92,11 @@ header, main, nav{
 
 .map{
     text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
-.map img{
-    height: 280px;
+.map iframe{
     width:inherit;
     border: 3px;
     padding: 5px;
@@ -125,6 +114,7 @@ footer{
     position: fixed;
     bottom: 0px;
     right: 0px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   }
 
   form {
@@ -181,14 +171,56 @@ footer{
   
 
   .food{
-    display: grid;
-    grid-template-columns: 1fr;
-  }
+    min-height: 500px;
+    /*Your code here.*/
+    /*Don't forget to vertically and horizontally alight the card*/
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    }
 
-  .food img{
+    .foodcard {
+    margin: 12px;
+    background: #fff;
+    border-radius: 7px;
+    padding: 0 0 50px 0;
+    flex-basis: 400px;
+    }
+
+    .foodcard > header{
+    background: #803912;
+    border: 2px solid white;
+    padding: 20px 0;
+    border-radius: 7px 7px 0 0;
+    }
+
+
+    .foodcard h3{
+    font-size: 32px;
+    color: white;
+    text-align: center;
+    }
+
+  img{
     width: 100%;
   }
 
+  @-webkit-keyframes logo_wiggle{
+    from {width: 20px;}
+    to {width: 50px;}
+  }
+  
+  @keyframes logo_wiggle{
+    from {width: 20px;}
+    to {width: 50px;}
+  } 
+  
+  #flag{
+    width: 50px;
+    position: relative;
+    animation: logo_wiggle 5s;
+  }
 
   @media screen and (min-width: 600px){
   }
@@ -197,16 +229,7 @@ footer{
 
   .Natural{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: auto;
-    width: 95vw;
-  }
-
-  .food{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    background-color: white;
+    grid-template-columns: 1fr 1fr;
   }
 
   #image1{
@@ -234,4 +257,16 @@ footer{
     grid-row: 2;
   }
 
+  .map{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+
+
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+    #flag {
+      animation: none;
+    }
