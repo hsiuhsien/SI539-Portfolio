@@ -27,17 +27,17 @@ nav ul{
 }
 
 nav ul li{
-    background-color:#DEB887;
-    font-size: 24px;
-    text-align:center;
+  background-color:#DEB887;
+  font-size:calc(12px + 1vw);
+  text-align:center;
 	padding:10px;
 	border:1px;
 }
 
 .current{
-    background-color:#2f4f4f;
-    font-size: 25px;
-    text-align:center;
+  background-color:#2f4f4f;
+  font-size:calc(14px + 1vw);
+  text-align:center;
 	padding:10px;
 	border:1px;
 }
@@ -155,7 +155,7 @@ footer{
   
   
   input[type=submit] {
-    background-color: rgb(187, 110, 59);
+    background-color: rgb(170, 88, 34);
     font-size: 125%;
     color: white;
     padding: 14px 20px;
@@ -166,7 +166,7 @@ footer{
   }
   
   input[type=submit]:hover {
-    opacity: 0.8;
+    opacity: 0.5;
   }
   
 
