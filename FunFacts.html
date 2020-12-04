@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Aldrich'>
     <link rel="shortcut icon" type="image/jpg" href="images/Taiwanflag.jpg"/>
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -11,6 +12,7 @@
   <body>
     <header>
         <h1><img src="images/Taiwanflag.jpg" alt="Taiwan Flag" id = "flag">  Fun Facts</h1>
+        <div class="skip"><a href="#main">Skip to Content</a></div>
         <nav>
             <ul>
             <li><a href="index.html">About Taiwan</a></li>
@@ -22,9 +24,11 @@
         </nav>
     </header>
 
-    <main class="container">
+    <main id="main" class="container">
     
-    <div class="covid text-block">
+    <div class="parallax" id="pic1"></div>
+
+    <div class="text-block">
       <a id="covid"></a>
       <h2>More than 200 days without a local COVID case</h2>
       <p>Taiwan holds the world’s best virus record by far and reached the 200-day landmark on Oct. 29th. Its last local case came on April 12; there has been no second wave. On Oct. 30th, it reached 201 days without a local case.
@@ -32,43 +36,49 @@
         Other than that, Taiwan has donated 6 million masks to countries in Asia, Europe, Americas since the outbreak of COVID to help the world against virus.</p>
     </div>
 
-    <div class="covid-image">
+   <!-- <div class="covid-image">
         <img src="images/covid.jpg" alt="Taiwan donated masks to worldwide"/>
-        <!-- https://www.taiwanembassy.org/va_en/post/3524.html --> 
-    </div>
+        https://www.taiwanembassy.org/va_en/post/3524.html 
+    </div> --> 
 
-    <div class="LGBT text-block">
+    <div class="parallax" id="pic2"></div>
+
+    <div class="text-block">
         <a id="LGBT"></a>
         <h2>The first in Asia to legalize same-sex marriage</h2>
         <p>Following a Constitutional Court ruling and a subsequent legislative act, Taiwan became the first country in Asia to legalize same-sex marriage nationwide on 24 May 2019. Taiwanese embrace diverse culture and believe that everyone is born equal, but it still takes a very long fight to have the LGBT marraige legalize. </p>
     </div>
 
-    <div class="LGBT-image">
+    <!-- <div class="LGBT-image">
       <img src="images/LGBT.jpg" alt="LGBT Parade"/>
-      <!-- https://commons.wikimedia.org/wiki/File:2019_%E5%90%8C%E5%BF%97%E9%81%8A%E8%A1%8C%E7%8F%BE%E5%A0%B4%E5%BD%A9%E8%99%B9%E5%A4%A7%E6%97%97.jpg -->
-    </div>
+      https://commons.wikimedia.org/wiki/File:2019_%E5%90%8C%E5%BF%97%E9%81%8A%E8%A1%8C%E7%8F%BE%E5%A0%B4%E5%BD%A9%E8%99%B9%E5%A4%A7%E6%97%97.jpg
+    </div>  -->
 
-    <div class="president text-block">
+    <div class="parallax" id="pic3"></div>
+
+    <div class="text-block">
         <a id="president"></a>
         <h2>Elected first female president in 2016</h2>
         <p> Tsai Ing-wen made history in 2016 as Taiwan's first female president, and won second presidential term this year in early 2020. It was not an easy move for the country considering the traditional culture but a big win for equality and liberal democracy.</p>
     </div>
 
-    <div class="president-image">
+    <!-- <div class="president-image">
       <img src="images/president.jpg" alt="Presidential Office"/>
-      <!-- https://commons.wikimedia.org/wiki/File:%E4%B8%96%E7%95%8C%E6%9C%80%E7%BE%8E%E7%B8%BD%E7%B5%B1%E5%BA%9C.jpg -->
-    </div>
+      https://commons.wikimedia.org/wiki/File:%E4%B8%96%E7%95%8C%E6%9C%80%E7%BE%8E%E7%B8%BD%E7%B5%B1%E5%BA%9C.jpg
+    </div>  -->
 
-    <div class="TnT text-block">
+    <div class="parallax" id="pic4"></div>
+
+    <div class="text-block">
         <a id="TnT"></a>
         <h2>Taiwan is not Thailand lol</h2>
         <p>This might be one of the most common misunderstanding among non Asian people. Taiwanese famous national foods are Boba tea and Din Tai Fung XiaoLongBao, but not Pad Thai and Thai tea.</p>
     </div>
 
-    <div class="TnT-image">
+    <!-- <div class="TnT-image">
       <img src="images/TnT.jpg" alt ="Taiwan view"/>
-      <!-- https://commons.wikimedia.org/wiki/File:Taipei_Skyline_2015.jpg -->
-    </div>
+      https://commons.wikimedia.org/wiki/File:Taipei_Skyline_2015.jpg 
+    </div> -->
 
   </main>
 <footer>

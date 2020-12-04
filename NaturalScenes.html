@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Aldrich'>
     <link rel="shortcut icon" type="image/jpg" href="images/Taiwanflag.jpg"/>
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -11,6 +12,7 @@
   <body>
     <header>
         <h1><img src="images/Taiwanflag.jpg" alt="Taiwan Flag" id = "flag">  Natural Scenes</h1>
+        <div class="skip"><a href="#main">Skip to Content</a></div>
         <nav>
             <ul>
             <li><a href="index.html">About Taiwan</a></li>
@@ -21,27 +23,136 @@
             </ul>
         </nav>
     </header>
-    <main>
-      <div class="Natural">
-      <div class="img-one"><img src="images/HehuanMountain.jpg" alt="Hehuan Mountain"/></div>
-      <!-- https://pixabay.com/zh/photos/taiwan-hehuan-mountain-galaxy-2551438/ -->
-      <div class="img-two"><img src="images/JadeMountain.jpg" alt="Jade Mountain" /></div>
-      <!-- https://commons.wikimedia.org/wiki/File:%E7%8E%89%E5%B1%B1%E4%B8%BB%E5%B3%B0_02.jpg -->
-      <div class="img-three"><img src="images/JiamingLake.jpg" alt="Jiaming Lake" /></div>
-      <!-- https://cyberisland.teldap.tw/P/qHOSFqlsKYQ-->   
-      <div class="img-four"><img src="images/Lanyu.jpeg" alt="Lanyu Island" /></div>
-      <!-- https://cyberisland.teldap.tw/P/qHQZxbfFKfs -->   
-      <div class="img-five"><img src="images/YangMingShan.jpeg" alt="YangMing Mountain" /></div>
-      <!-- https://www.flickr.com/photos/idisdao/29493636868/in/photostream/ -->   
-      <div class="img-six"><img src="images/Taroko.jpg" alt="Taroko National Park"/></div>
-      <!-- https://commons.wikimedia.org/wiki/File:Taroko_Gate_Bridge%EF%BC%8CTaiwan.jpg -->   
-      <div class="img-seven"><img src="images/TarokoCliff.jpg" alt="Taroko Cliff" /></div>
-      <!-- https://cyberisland.ndap.org.tw/P/qHmfpbDFcys -->   
-      <div class="img-eight"><img src="images/Wuling.jpeg" alt="Wuling Farm" /></div>
-      <!-- https://www.flickr.com/photos/elite_chen/25205391809 -->   
-      <div class="img-nine"><img src="images/YehliuGeopark.jpg" alt="Yehliu Geopark" /></div>
-      <!-- https://cyberisland.teldap.tw/P/gzcZ -->
+    <main id="main">
+    <div class="Natural">
+
+      <div class="img-one">
+        <div class="flip-card" tabindex="0">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+            <img src="images/HehuanMountain.jpg" alt="Hehuan Mountain"/>
+            <!-- https://pixabay.com/zh/photos/taiwan-hehuan-mountain-galaxy-2551438/ -->
+            </div>
+            <div class="flip-card-back">
+            <h1> Hehuan Mountain </h1>
+            </div>
+          </div>
+        </div>   
+      </div> 
+      
+      <div class="img-two">
+        <div class="flip-card" tabindex="0">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+            <img src="images/JadeMountain.jpg" alt="Jade Mountain" />
+            <!-- https://commons.wikimedia.org/wiki/File:%E7%8E%89%E5%B1%B1%E4%B8%BB%E5%B3%B0_02.jpg -->
+            </div>
+            <div class="flip-card-back">
+            <h1> Jade Mountain </h1>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <div class="img-three">
+        <div class="flip-card" tabindex="0">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+            <img src="images/JiamingLake.jpg" alt="Jiaming Lake" />
+            <!-- https://cyberisland.teldap.tw/P/qHOSFqlsKYQ -->
+            </div>
+            <div class="flip-card-back">
+            <h1> Jiaming Lake </h1>
+            </div>
+          </div>
+        </div>   
+      </div>
+      
+      <div class="img-four">
+      <div class="flip-card" tabindex="0">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/Lanyu.jpeg" alt="Lanyu Island" />
+           <!-- https://cyberisland.teldap.tw/P/qHQZxbfFKfs  -->
+          </div>
+          <div class="flip-card-back">
+            <h1> Lanyu Island </h1>
+          </div>
+        </div>
+      </div>   
+      </div>
+
+      <div class="img-five">
+        <div class="flip-card" tabindex="0">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/YangMingShan.jpeg" alt="YangMing Mountain" />
+            <!-- https://www.flickr.com/photos/idisdao/29493636868/in/photostream/ -->
+          </div>
+          <div class="flip-card-back">
+            <h1> YangMing Mountain </h1>
+          </div>
+        </div>
+      </div>   
+    </div>
+
+    <div class="img-six">
+      <div class="flip-card" tabindex="0">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/Taroko.jpg" alt="Taroko National Park"/>
+            <!-- https://commons.wikimedia.org/wiki/File:Taroko_Gate_Bridge%EF%BC%8CTaiwan.jpg  -->
+          </div>
+          <div class="flip-card-back">
+            <h1> Taroko National Park </h1>
+          </div>
+        </div>
+      </div>  
+    </div> 
+      
+    <div class="img-seven">
+      <div class="flip-card" tabindex="0">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/TarokoCliff.jpg" alt="Taroko Cliff" />
+            <!-- https://cyberisland.ndap.org.tw/P/qHmfpbDFcys   -->
+          </div>
+          <div class="flip-card-back">
+            <h1> Taroko Cliff </h1>
+          </div>
+        </div>
+      </div>   
+    </div> 
+
+    <div class="img-eight">
+      <div class="flip-card" tabindex="0">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/Wuling.jpeg" alt="Wuling Farm" />
+            <!-- https://www.flickr.com/photos/elite_chen/25205391809 -->
+          </div>
+          <div class="flip-card-back">
+            <h1> Wuling Farm </h1>
+          </div>
+        </div>
+      </div>   
+    </div>
+
+    <div class="img-nine">
+      <div class="flip-card" tabindex="0">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/YehliuGeopark.jpg" alt="Yehliu Geopark" />
+            <!-- https://cyberisland.teldap.tw/P/gzcZ -->
+          </div>
+          <div class="flip-card-back">
+            <h1> Yehliu Geopark </h1>
+          </div>
+        </div>
+      </div>    
+    </div>
+    
+    </div>
     </main>
 
 <footer>
