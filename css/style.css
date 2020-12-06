@@ -273,41 +273,49 @@ footer{
     }
 
     .foodcard {
-    margin: 12px;
-    background: #fff;
-    border-radius: 7px;
-    padding: 0 0 50px 0;
-    flex-basis: 400px;
+      margin: 12px;
+      background: #fff;
+      border-radius: 7px;
+      padding: 7px 0;
+      flex-basis: 400px;
     }
 
     .foodcard > header{
-    background: #803912;
-    border: 2px solid white;
-    padding: 20px 0;
-    border-radius: 7px 7px 0 0;
-    height: 20px;
+      background: #803912;
+      border: 2px solid white;
+      padding: 20px 0;
+      border-radius: 7px 7px 0 0;
+      height: 20px;
+      display: none;
     }
-
 
     .foodcard h3{
-    font-size: calc(18px + 1vw);
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    display: none;
+      font-size: calc(18px + 1vw);
+      color: white;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-align: center;
     }
 
+    .foodcard > .fa-star{
+      display:none;
+    }
+
+    .foodcard:hover > header{
+      display: block;
+      }
+    
+    .foodcard:hover > .fa-star{
+      display: inline-block;
+      }
     
     .food img{
       width: 100%;
       height: calc(300px + 1vw);
     }
 
-    .foodcard:hover + .foodcard h3{
-      display: block;
-      color: white;
-      }
-
+    .checked {
+      color: orange;
+    }
 
     .Natural img{
       width: 100%;
