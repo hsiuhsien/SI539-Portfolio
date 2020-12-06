@@ -531,6 +531,11 @@ footer{
       animation: none;
     }
 
+    .parallax {
+      background-attachment: scroll;
+    }
+
+
     .flip-card-inner {
       transition: none;
     }
