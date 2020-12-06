@@ -22,8 +22,8 @@ header{
 
 nav ul{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto auto auto; 
+  grid-template-columns: 1fr 1fr
+  grid-template-row: auto auto auto;
 }
 
 nav ul li{
@@ -193,7 +193,7 @@ header, main, nav{
 
 .flip-card-back h1{
   color: white;
-  font-size: 28px;
+  font-size: 26px;
   padding: 130px 0px;
 }
 
@@ -285,6 +285,7 @@ footer{
     border: 2px solid white;
     padding: 20px 0;
     border-radius: 7px 7px 0 0;
+    height: 20px;
     }
 
 
@@ -293,16 +294,25 @@ footer{
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
+    display: none;
     }
 
+    
     .food img{
       width: 100%;
       height: calc(300px + 1vw);
     }
 
+    .foodcard:hover + .foodcard h3{
+      display: block;
+      color: white;
+      }
+
+
     .Natural img{
       width: 100%;
       height: calc(300px + 1vw);
+      border: 5px solid #DEB887;
     }
 
     img{
@@ -325,35 +335,51 @@ footer{
     animation: logo_wiggle 5s;
   }
 
+
   @media screen and (min-width: 600px){
+
+  nav ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto; 
   }
 
   .Natural{
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: calc(400px + 1vw) calc(400px + 1vw) calc(400px + 1vw) calc(400px + 1vw) calc(400px + 1vw) calc(400px + 1vw) calc(400px + 1vw) calc(400px + 1vw) calc(400px + 1vw);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: calc(300px + 1vw) calc(300px + 1vw) calc(300px + 1vw) calc(300px + 1vw) calc(300px + 1vw);
   }
 
   .Natural img{
     width: 100%;
-    height: calc(400px + 1vw);
+    height: calc(300px + 1vw);
   }
 
   .flip-card-back{
     background-color: #803912;
     width: 100%;
-    height: calc(400px + 1vw);
+    height: calc(300px + 1vw);
     color: white;
     transform: rotateY(180deg);
   }
 
   .flip-card-back h1{
     color: white;
-    font-size: 36px;
-    padding: 180px 0px;
+    font-size: 28px;
+    padding: 130px 0px;
   }
 
+}
+
   @media screen and (min-width: 1000px){
+
+  nav ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto; 
+  }
+
+
   .parallax {
     min-height: 500px; 
     background-attachment: fixed;
@@ -384,13 +410,13 @@ footer{
 
   .Natural{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: calc(400px + 1vw) calc(400px + 1vw) calc(400px + 1vw) calc(400px + 1vw) calc(400px + 1vw);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: calc(300px + 1vw) calc(300px + 1vw) calc(300px + 1vw);
   }
 
   .Natural img{
     width: 100%;
-    height: calc(400px + 1vw);
+    height: calc(300px + 1vw);
   }
 
   .img-one{
@@ -404,37 +430,37 @@ footer{
   }
 
   .img-three{
-    grid-column: 1;
-    grid-row: 2;
+    grid-column: 3;
+    grid-row: 1;
   }
   .img-four{
-    grid-column: 2;
+    grid-column: 1;
     grid-row: 2;
   }
 
   .img-five{
-    grid-column: 1;
-    grid-row: 3;
+    grid-column: 2;
+    grid-row: 2;
   }
 
   .img-six{
-    grid-column: 2;
-    grid-row: 3;
+    grid-column: 3;
+    grid-row: 2;
   }
 
   .img-seven{
     grid-column: 1;
-    grid-row: 4;
+    grid-row: 3;
   }
 
   .img-eight{
     grid-column: 2;
-    grid-row: 4;
+    grid-row: 3;
   }
 
   .img-nine{
-    grid-column: 1;
-    grid-row: 5;
+    grid-column: 3;
+    grid-row: 3;
   }
   .flip-card {
     width: 100%;
@@ -472,15 +498,15 @@ footer{
   .flip-card-back{
     background-color: #803912;
     width: 100%;
-    height: calc(400px + 1vw);
+    height: calc(300px + 1vw);
     color: white;
     transform: rotateY(180deg);
   }
 
   .flip-card-back h1{
     color: white;
-    font-size: 40px;
-    padding: 180px 0px;
+    font-size: 32px;
+    padding: 120px 0px;
   }
 
   .map{
@@ -498,5 +524,12 @@ footer{
     }
 
     .flip-card-inner {
-      transition: transform none;
-  }
+      transition: none;
+    }
+
+    .foodcard:hover{
+      transform: none;
+    }
+
+
+}
