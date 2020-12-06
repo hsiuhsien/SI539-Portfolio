@@ -535,9 +535,12 @@ footer{
       transition: none;
     }
 
-    .foodcard:hover{
-      transform: none;
+    .foodcard > header{
+      display: block;
     }
-
+    
+    .foodcard > .fa-star{
+      display: inline-block;
+    }
 
 }
